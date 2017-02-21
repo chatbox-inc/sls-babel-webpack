@@ -20,6 +20,9 @@ service: sls-webpack-babel
 plugins:
   - serverless-webpack
 
+custom:
+  webpackIncludeModules: true # enable auto-packing of external modules
+
 provider:
   name: aws
   runtime: nodejs4.3
